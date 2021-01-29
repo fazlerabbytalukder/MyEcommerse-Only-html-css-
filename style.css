@@ -1,0 +1,365 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-font-smotthing: antialiased;
+}
+
+body{
+    font-family: 'Oswald', sans-serif;
+}
+
+.container {
+  max-width: 1152px;
+  padding: 0 15px;
+  margin: 15px auto;
+}
+
+:root {
+  --primary: #212529;
+  --secondary:#6C757D;
+  --ternary:#BFFF00;
+}
+
+a,
+p,
+li,
+button {
+  text-decoration: none;
+}
+
+/* --------header section--------- */
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 2rem;
+  /* flex-direction: row; */
+}
+
+
+.nav-links li{
+    text-decoration: none;
+    list-style: none;
+    display: inline-block;
+}
+
+.nav-links li a{
+    font-weight: 500;
+    color: var(--secondary);
+    margin: 0 10px;
+    transition: .3s all ease;
+}
+
+.nav-links li a:hover{
+    color: black;
+}
+
+#active{
+    color: black;
+}
+
+
+/* --------hero section--------- */
+
+.hero{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 3rem;
+    margin-top: 4.5rem;
+}
+
+.hero .left h1{
+    color: var(--ternary);
+    font-size: 60px;
+    margin-bottom: 1rem;
+}
+
+.hero .left h1 span{
+    color: var(--primary);
+}
+
+.hero .left p{
+    color: var(--secondary);
+    margin-bottom: 1.9rem;
+}
+
+.hero .left .btn button{
+    background-color: rgb(89, 89, 245);
+    border: none;
+    margin-right: 20px;
+    padding: 15px 25px;
+    border-radius: 15px;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+}
+
+/* --------card woman section--------- */
+
+.head-of-card{
+    text-align: center;
+    color: var(--primary);
+    font-size: 20px;
+    margin-bottom: 1rem;
+    margin-top: 5.2rem;
+}
+
+.women-cart{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card{
+    background-color:#FAF0E6;
+    width: 350px;
+    padding: 15px;
+    border-radius: 1rem;
+}
+
+.card .image-container{
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+    text-align: center;
+}
+
+.card .info-box .box-content h1{
+    text-align: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    color: var(--primary);
+}
+
+.card .info-box .box-content p{
+    text-align: center;
+    color: var(--secondary);
+}
+
+.card .info-box .box-content h2{
+    text-align: center;
+    margin-top: 1rem;
+    color: var(--primary);
+    margin-bottom: 1rem;
+}
+
+.card .info-box .button-group{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card .info-box .button-group .buy{
+    background-color:  rgb(89, 89, 245);
+    border: none;
+    padding: 20px 18px;
+    border-radius: 8px;
+    font-size: 17px;
+    color: white;
+    cursor: pointer;
+}
+
+.card .info-box .button-group .add-to-cart{
+    background-color:  rgb(89, 89, 245);
+    border: none;
+    padding: 20px 18px;
+    border-radius: 8px;
+    font-size: 17px;
+    color: white;
+    cursor: pointer;
+}
+
+/* --------info section--------- */
+
+.info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 6rem;
+}
+
+.content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.info .left .text-part{
+    margin-left: 1rem;
+    color: var(--secondary);
+}
+
+.info .left .text-part h1{
+    font-size: 26px;
+    margin-bottom: 0.2rem;
+}
+
+/* --------offer card section--------- */
+
+/* .chat-section{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 15rem;
+  margin-bottom: 15rem;
+}
+
+.blog-card{
+  position: absolute;
+  height: 200px;
+  width: 95%;
+  max-width: 850px;
+  margin: auto;
+  background: #6C757D;
+}
+
+.blog-card .inner-part{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 25px 25px;
+
+}
+
+.inner-part img{
+  height: 160px;
+  width: 160px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.content{
+  padding: 0 20px 0 35px;
+  width: 530px;
+  margin-left: 50px;
+}
+
+.content .title{
+  font-size: 30px;
+  font-weight: 700;
+  color: white;
+  margin-bottom: 4px;
+}
+
+.content .text{
+  font-size: 17px;
+  color:rgb(240, 227, 227);
+  margin-bottom: 10px;
+  line-height: 1.5rem;
+  text-align: justify;
+}
+
+.content button{
+  border: none;
+  background-color: rgb(53, 38, 38);
+  margin-right: 20px;
+  padding: 10px 15px;
+  border-radius: 15px;
+  font-weight: bold;
+  color:var(--ternary);
+  text-transform: uppercase;
+  font-size: 14px;
+  cursor: pointer;
+} */
+
+/* .inner-part{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.blog-card{
+  position: absolute;
+  height: 400px;
+  width: 100%;
+  max-width: 950px;
+  margin: auto;
+  background: #6C757D;
+} */
+
+.inner-part{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.blog-content{
+    position: absolute;
+    height: 350px;
+    width: 100%;
+    max-width: 950px;
+    margin: auto;
+    background: #6C757D;
+    margin-top: 4rem;
+    margin-left: 4.5rem;
+    border-radius: .4rem;
+}
+
+.blog-content .right img{
+    height: 300px;
+    width: 300px;
+    position: relative;
+    top: 10px;
+    right: 30px;
+
+}
+
+.blog-content .inner-part .left h1{
+    color: var(--primary);
+    margin-left: 2rem;
+}
+
+.blog-content .inner-part .left p{
+    color: var(--primary);
+    margin-left: 2rem;
+    margin-bottom: 1rem;
+    margin-top: .5rem;
+}
+
+.blog-content .inner-part .left button{
+    background-color: rgb(89, 89, 245);
+    border: none;
+    margin-left: 2rem;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+}
+
+/* ------social section----- */
+
+.social-connectivity{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 35rem;
+}
+
+.gmail span{
+  font-size: 15px;
+  color: var(--primary);
+}
+
+.gmail{
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.footer{
+  color: var(--primary);
+  margin-top: 3rem;
+}
+
+
+
+
+
